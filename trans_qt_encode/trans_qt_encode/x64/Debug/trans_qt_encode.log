@@ -1,0 +1,70 @@
+﻿  en_sub.c
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(42): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(46): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(48): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(69): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(74): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(79): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(137): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(142): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(158): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(183): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(188): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(204): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(255): warning C4244: “=”: 从“float”转换到“unsigned __int64”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(260): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(297): warning C4244: “函数”: 从“unsigned __int64”转换到“double”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(299): warning C4244: “=”: 从“unsigned __int64”转换到“unsigned int”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(311): warning C4244: “=”: 从“unsigned __int64”转换到“unsigned int”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(323): warning C4244: “=”: 从“unsigned __int64”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(325): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(353): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(362): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(371): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(380): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(390): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(404): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(413): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(422): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(355): warning C4101: “desub”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(357): warning C4101: “lenbits”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(356): warning C4101: “qcf0”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(458): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(452): warning C4101: “desub”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(453): warning C4101: “lenbits”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(455): warning C4101: “qcf0”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(538): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(533): warning C4101: “desub”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(534): warning C4101: “lenbits”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(526): warning C4101: “qcf0”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(626): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(637): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(648): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(659): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(670): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(681): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(691): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(808): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(895): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(905): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(915): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(924): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(934): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(944): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(953): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(963): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(973): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(983): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(1167): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(1181): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(1190): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(1199): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(1208): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(1217): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(1226): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(1235): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(1244): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(1253): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(1639): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\trans_qt_encode\trans_qt_encode\quant\en_sub.c(1658): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+  trans_qt_encode.vcxproj -> C:\Users\liyang\Desktop\BiShe\trans_qt_encode\x64\Debug\trans_qt_encode.exe
