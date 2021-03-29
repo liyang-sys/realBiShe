@@ -58,7 +58,7 @@ float* de_DCinv(char* bin, int a, int lg, int* m, float delta)
 	int j = 0;
 	int offset0 = 8;
 	int offset1 = 32;
-	for (int i = 0; i < lg; i++){
+	for (int i = 0; i < lg; i++) {
 		DES de = deSFcode(bin, Nsym);
 		rePTVData[a][b][c] = (float)((de.sym - 1 + minqsb) * delta);
 		deqcf[i] = rePTVData[a][b][c];
@@ -109,11 +109,11 @@ void de_subDC_noharr(int a, int *w, int *h, int **m, float delta, int lenbits)
 	/*1------------------------------------------------------------------*/
 	lg = (w[2] * h[2]) << 3;
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -122,11 +122,11 @@ void de_subDC_noharr(int a, int *w, int *h, int **m, float delta, int lenbits)
 	/*2------------------------------------------------------------------------*/
 	lg = (w[3] * h[2]) << 3;
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -135,11 +135,11 @@ void de_subDC_noharr(int a, int *w, int *h, int **m, float delta, int lenbits)
 	/*3----------------------------------------------------------------*/
 	lg = (w[2] * h[3]) << 3;
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -148,11 +148,11 @@ void de_subDC_noharr(int a, int *w, int *h, int **m, float delta, int lenbits)
 	/*4--------------------------------------------------------*/
 	lg = (w[3] * h[3]) << 3;
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -162,11 +162,11 @@ void de_subDC_noharr(int a, int *w, int *h, int **m, float delta, int lenbits)
 	/*1----------------------------------------------------------------*/
 	lg = (w[5] * h[4]) << 3;
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -174,11 +174,11 @@ void de_subDC_noharr(int a, int *w, int *h, int **m, float delta, int lenbits)
 	/*3-----------------------------------------------------------------*/
 	lg = (w[5] * h[5]) << 3;
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -186,11 +186,11 @@ void de_subDC_noharr(int a, int *w, int *h, int **m, float delta, int lenbits)
 	/*2-------------------------------------------------------------------*/
 	lg = (w[4] * h[5]) << 3;
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -217,11 +217,11 @@ void de_sub7_noharr(int a, int *w, int *h, int **m, float delta, int lenbits)
 	lg = (w[6] * h[6]) << 3;
 	/*1-------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -229,11 +229,11 @@ void de_sub7_noharr(int a, int *w, int *h, int **m, float delta, int lenbits)
 
 	/*2------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -241,11 +241,11 @@ void de_sub7_noharr(int a, int *w, int *h, int **m, float delta, int lenbits)
 
 	/*3-----------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -253,11 +253,11 @@ void de_sub7_noharr(int a, int *w, int *h, int **m, float delta, int lenbits)
 
 	/*4-------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -265,11 +265,11 @@ void de_sub7_noharr(int a, int *w, int *h, int **m, float delta, int lenbits)
 
 	/*5--------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -277,11 +277,11 @@ void de_sub7_noharr(int a, int *w, int *h, int **m, float delta, int lenbits)
 
 	/*6------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -289,11 +289,11 @@ void de_sub7_noharr(int a, int *w, int *h, int **m, float delta, int lenbits)
 
 	/*7--------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -318,11 +318,11 @@ void de_sub8_noharr(int a, int b, int *w, int *h, int **m, float delta, int lenb
 	lg = (w[6] * h[6]) << 3;
 	/*1-------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -330,11 +330,11 @@ void de_sub8_noharr(int a, int b, int *w, int *h, int **m, float delta, int lenb
 
 	/*2-----------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -342,11 +342,11 @@ void de_sub8_noharr(int a, int b, int *w, int *h, int **m, float delta, int lenb
 
 	/*3------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -354,11 +354,11 @@ void de_sub8_noharr(int a, int b, int *w, int *h, int **m, float delta, int lenb
 
 	/*4---------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -366,11 +366,11 @@ void de_sub8_noharr(int a, int b, int *w, int *h, int **m, float delta, int lenb
 
 	/*5--------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -378,11 +378,11 @@ void de_sub8_noharr(int a, int b, int *w, int *h, int **m, float delta, int lenb
 
 	/*6-------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -390,11 +390,11 @@ void de_sub8_noharr(int a, int b, int *w, int *h, int **m, float delta, int lenb
 
 	/*7----------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -402,11 +402,11 @@ void de_sub8_noharr(int a, int b, int *w, int *h, int **m, float delta, int lenb
 
 	/*8----------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -434,11 +434,11 @@ void de_coef3d_dc(int a, int *w, int *h, int **m, float delta, int lenbits)
 	//1-------------------------------------------------------------------
 	lg = (w[2] * h[2]) << 2;	//第二次PTV
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -447,11 +447,11 @@ void de_coef3d_dc(int a, int *w, int *h, int **m, float delta, int lenbits)
 	//2-------------------------------------------------------------------
 	lg = (w[3] * h[2]) << 2;
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -460,11 +460,11 @@ void de_coef3d_dc(int a, int *w, int *h, int **m, float delta, int lenbits)
 	//3-------------------------------------------------------------------
 	lg = (w[2] * h[3]) << 2;
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -473,11 +473,11 @@ void de_coef3d_dc(int a, int *w, int *h, int **m, float delta, int lenbits)
 	//4-------------------------------------------------------------------
 	lg = (w[3] * h[3]) << 2;
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -486,11 +486,11 @@ void de_coef3d_dc(int a, int *w, int *h, int **m, float delta, int lenbits)
 	//5-------------------------------------------------------------------
 	lg = (w[5] * h[4]) << 2;	//第一次PTV
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -498,11 +498,11 @@ void de_coef3d_dc(int a, int *w, int *h, int **m, float delta, int lenbits)
 	//6-------------------------------------------------------------------
 	lg = (w[5] * h[5]) << 2;
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -510,11 +510,11 @@ void de_coef3d_dc(int a, int *w, int *h, int **m, float delta, int lenbits)
 	//7-------------------------------------------------------------------
 	lg = (w[4] * h[5]) << 2;
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -539,11 +539,11 @@ void de_coed3d_7(int a, int *w, int *h, int **m, float delta, int lenbits)
 	lg = (w[6] * h[6]) << 2;
 	/*1-------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -551,11 +551,11 @@ void de_coed3d_7(int a, int *w, int *h, int **m, float delta, int lenbits)
 
 	/*2---------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -563,11 +563,11 @@ void de_coed3d_7(int a, int *w, int *h, int **m, float delta, int lenbits)
 
 	/*3----------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -575,11 +575,11 @@ void de_coed3d_7(int a, int *w, int *h, int **m, float delta, int lenbits)
 
 	/*4--------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -587,11 +587,11 @@ void de_coed3d_7(int a, int *w, int *h, int **m, float delta, int lenbits)
 
 	/*5----------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -599,11 +599,11 @@ void de_coed3d_7(int a, int *w, int *h, int **m, float delta, int lenbits)
 
 	/*6-------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -611,11 +611,11 @@ void de_coed3d_7(int a, int *w, int *h, int **m, float delta, int lenbits)
 
 	/*7-------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -640,11 +640,11 @@ void de_coed3d_8(int a, int b, int *w, int *h, int **m, float delta, int lenbits
 	lg = (w[6] * h[6]) << 2;
 	/*1----------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -652,11 +652,11 @@ void de_coed3d_8(int a, int b, int *w, int *h, int **m, float delta, int lenbits
 
 	/*2--------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -664,11 +664,11 @@ void de_coed3d_8(int a, int b, int *w, int *h, int **m, float delta, int lenbits
 
 	/*3--------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -676,11 +676,11 @@ void de_coed3d_8(int a, int b, int *w, int *h, int **m, float delta, int lenbits
 
 	/*4------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -688,11 +688,11 @@ void de_coed3d_8(int a, int b, int *w, int *h, int **m, float delta, int lenbits
 
 	/*5-------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -700,11 +700,11 @@ void de_coed3d_8(int a, int b, int *w, int *h, int **m, float delta, int lenbits
 
 	/*6-----------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -712,11 +712,11 @@ void de_coed3d_8(int a, int b, int *w, int *h, int **m, float delta, int lenbits
 
 	/*7-----------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -724,11 +724,11 @@ void de_coed3d_8(int a, int b, int *w, int *h, int **m, float delta, int lenbits
 
 	/*8------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -754,11 +754,11 @@ void de_coef3dB_dc(int a, int *w, int *h, int **m, float delta, int lenbits)
 	//1-------------------------------------------------------------------
 	lg = (w[0] * h[0]) << 1;//第三次PTV
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -767,11 +767,11 @@ void de_coef3dB_dc(int a, int *w, int *h, int **m, float delta, int lenbits)
 	//2-------------------------------------------------------------------
 	lg = (w[1] * h[0]) << 1;
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -779,11 +779,11 @@ void de_coef3dB_dc(int a, int *w, int *h, int **m, float delta, int lenbits)
 	//3-------------------------------------------------------------------
 	lg = (w[1] * h[1]) << 1;
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -791,11 +791,11 @@ void de_coef3dB_dc(int a, int *w, int *h, int **m, float delta, int lenbits)
 	//4-------------------------------------------------------------------
 	lg = (w[0] * h[1]) << 1;
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -804,11 +804,11 @@ void de_coef3dB_dc(int a, int *w, int *h, int **m, float delta, int lenbits)
 	//5-------------------------------------------------------------------
 	lg = (w[3] * h[2]) << 1;//第二次PTV
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -816,11 +816,11 @@ void de_coef3dB_dc(int a, int *w, int *h, int **m, float delta, int lenbits)
 	//6-------------------------------------------------------------------
 	lg = (w[3] * h[3]) << 1;
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -828,11 +828,11 @@ void de_coef3dB_dc(int a, int *w, int *h, int **m, float delta, int lenbits)
 	//7-------------------------------------------------------------------
 	lg = (w[2] * h[3]) << 1;
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -841,11 +841,11 @@ void de_coef3dB_dc(int a, int *w, int *h, int **m, float delta, int lenbits)
 	//8-------------------------------------------------------------------
 	lg = (w[5] * h[4]) << 1;//第一次PTV
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -853,11 +853,11 @@ void de_coef3dB_dc(int a, int *w, int *h, int **m, float delta, int lenbits)
 	//9-------------------------------------------------------------------
 	lg = (w[5] * h[5]) << 1;
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -865,11 +865,11 @@ void de_coef3dB_dc(int a, int *w, int *h, int **m, float delta, int lenbits)
 	//10-------------------------------------------------------------------
 	lg = (w[4] * h[5]) << 1;
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -895,37 +895,37 @@ void de_coef3dB_L3(int H, int W, int a, int b, int c, int *w, int *h, int **m, f
 	lg = (w[6] * h[6]) << 1;
 	/*1-------------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
 	scan_inv(a + 8, b, c, lg, m[35], 3, 2, 0, qcf0);	//反向扫描
 	/*2-------------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
-	scan_inv(a + 8, b+1, c, lg, m[35], 3, 2, 0, qcf0);	//反向扫描
+	scan_inv(a + 8, b + 1, c, lg, m[35], 3, 2, 0, qcf0);	//反向扫描
 	/*3-------------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
-	scan_inv(a + 8, b+1, c-1, lg, m[35], 3, 2, 0, qcf0);	//反向扫描
+	scan_inv(a + 8, b + 1, c - 1, lg, m[35], 3, 2, 0, qcf0);	//反向扫描
 
 
 	return;
@@ -947,37 +947,37 @@ void de_coef3dB_L2_3(int H, int W, int a, int b, int c, int *w, int *h, int **m,
 	lg = (2 * w[6] * 2 * h[6]) << 1;
 	/*1-------------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
 	scan_inv_L2(H, W, a + 8, b, c, lg, m[38], 2, qcf0);
 	/*2-------------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
-	scan_inv_L2(H, W, a + 8, b, c+2, lg, m[38], 2, qcf0);	//反向扫描
+	scan_inv_L2(H, W, a + 8, b, c + 2, lg, m[38], 2, qcf0);	//反向扫描
 	/*3-------------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
-	scan_inv_L2(H, W, a + 8, b, c+4, lg, m[38], 2, qcf0);	//反向扫描
+	scan_inv_L2(H, W, a + 8, b, c + 4, lg, m[38], 2, qcf0);	//反向扫描
 
 	return;
 }
@@ -998,44 +998,44 @@ void de_coef3dB_L2_4(int H, int W, int a, int b, int c, int *w, int *h, int **m,
 	lg = (2 * w[6] * 2 * h[6]) << 1;
 	/*1-------------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
 	scan_inv_L2(H, W, a + 8, b, c, lg, m[38], 2, qcf0);
 	/*2-------------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
 	scan_inv_L2(H, W, a + 8, b, c + 2, lg, m[38], 2, qcf0);	//反向扫描
 	/*3-------------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
 	scan_inv_L2(H, W, a + 8, b, c + 4, lg, m[38], 2, qcf0);	//反向扫描
 	/*4-------------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);
@@ -1060,19 +1060,19 @@ void de_coef3d_dc5B_dc(int a, int *w, int *h, int **m, float delta, int AC, int 
 	float *qcf0;
 	delta0 = (float)1.0 / delta;
 
-	if (!AC){
+	if (!AC) {
 		//DC--------------------------------------------------------------------
 		lg = w[0] * h[0];//第三次PTV，对应matlab里Ldc=coef(:,:,2)
 		qcf0 = de_DCinv(bin, a, lg, m[0], delta);
 	}
-	else{
+	else {
 		lg = w[0] * h[0];
 		qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-		if (qnt){
+		if (qnt) {
 			desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 			free(desub.sn.dat); free(desub.cfw.dat);
 		}
-		else{
+		else {
 			printf("子带全为零\n");
 		}
 		qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -1082,11 +1082,11 @@ void de_coef3d_dc5B_dc(int a, int *w, int *h, int **m, float delta, int AC, int 
 	//2---------------------------------------------------------------------
 	lg = w[1] * h[0];
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -1095,11 +1095,11 @@ void de_coef3d_dc5B_dc(int a, int *w, int *h, int **m, float delta, int AC, int 
 	//3--------------------------------------------------------------------------
 	lg = w[1] * h[1];
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -1108,11 +1108,11 @@ void de_coef3d_dc5B_dc(int a, int *w, int *h, int **m, float delta, int AC, int 
 	//4-------------------------------------------------------------------
 	lg = w[0] * h[1];
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -1121,11 +1121,11 @@ void de_coef3d_dc5B_dc(int a, int *w, int *h, int **m, float delta, int AC, int 
 	//5--------------------------------------------------------------------
 	lg = w[3] * h[2];//第二次PTV，对应matlab里L5=coef(:,:,5)
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -1133,11 +1133,11 @@ void de_coef3d_dc5B_dc(int a, int *w, int *h, int **m, float delta, int AC, int 
 	//7--------------------------------------------------------------------
 	lg = w[3] * h[3];
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -1145,11 +1145,11 @@ void de_coef3d_dc5B_dc(int a, int *w, int *h, int **m, float delta, int AC, int 
 	//6-------------------------------------------------------------------
 	lg = w[2] * h[3];
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -1158,11 +1158,11 @@ void de_coef3d_dc5B_dc(int a, int *w, int *h, int **m, float delta, int AC, int 
 	//8-------------------------------------------------------------------
 	lg = w[5] * h[4];//第一次PTV
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -1170,11 +1170,11 @@ void de_coef3d_dc5B_dc(int a, int *w, int *h, int **m, float delta, int AC, int 
 	//10---------------------------------------------------------------------
 	lg = w[5] * h[5];
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -1182,11 +1182,11 @@ void de_coef3d_dc5B_dc(int a, int *w, int *h, int **m, float delta, int AC, int 
 	//9---------------------------------------------------------------------
 	lg = w[4] * h[5];
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);	//解码
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -1215,37 +1215,37 @@ void de_coef3d_dc5B_L3(int H, int W, int a, int b, int c, int *w, int *h, int **
 	lg = (w[6] * h[6]);
 	/*1------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
 	scan_inv(a, b, c, lg, m[34], 3, 3, 0, qcf0);	//反向扫描
 	/*2------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
-	scan_inv(a, b+1, c, lg, m[34], 3, 3, 0, qcf0);	//反向扫描
+	scan_inv(a, b + 1, c, lg, m[34], 3, 3, 0, qcf0);	//反向扫描
 	/*3------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
-	scan_inv(a, b+1, c-1, lg, m[34], 3, 3, 0, qcf0);	//反向扫描
+	scan_inv(a, b + 1, c - 1, lg, m[34], 3, 3, 0, qcf0);	//反向扫描
 
 	return;
 }
@@ -1268,37 +1268,37 @@ void de_coef3d_dc5B_L2(int H, int W, int a, int b, int c, int *w, int *h, int **
 	lg = (2 * w[6] * 2 * h[6]);
 	/*1------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
 	scan_inv_L2(H, W, a, b, c, lg, m[39], 3, qcf0);
 	/*2------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
-	scan_inv_L2(H, W, a, b+2, c, lg, m[39], 3, qcf0);	//反向扫描
+	scan_inv_L2(H, W, a, b + 2, c, lg, m[39], 3, qcf0);	//反向扫描
 	/*3------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
-	scan_inv_L2(H, W, a, b+2, c-2, lg, m[39], 3, qcf0);	//反向扫描
+	scan_inv_L2(H, W, a, b + 2, c - 2, lg, m[39], 3, qcf0);	//反向扫描
 
 	return;
 }
@@ -1321,33 +1321,33 @@ void de_coef3d_dc5B_L1(int H, int W, int a, int b, int c, int *w, int *h, int **
 	lg = (4 * w[6] * 4 * h[6]);
 	/*1------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
 	scan_inv_L2(H, W, a, b, c, lg, m[40], 3, qcf0);
 	/*2------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
 	scan_inv_L2(H, W, a, b + 4, c, lg, m[40], 3, qcf0);	//反向扫描
 	/*3------------------------------------------------------------------------*/
 	qctr = find_qctr(bin, &qnt, &trim, &ctr1);
-	if (qnt){
+	if (qnt) {
 		desub = de_sub3d_sub2(bin, lg, qctr, lenbits);
 		free(desub.sn.dat); free(desub.cfw.dat);
 	}
-	else{
+	else {
 		printf("子带全为零\n");
 	}
 	qcf0 = rst_sub(desub.cf.dat, delta, lg, qnt, qctr, trim, ctr1);	//反量化
@@ -1356,7 +1356,7 @@ void de_coef3d_dc5B_L1(int H, int W, int a, int b, int c, int *w, int *h, int **
 	return;
 }
 
-void de_video_full(int H,int W, int *w, int *h, int **m0, int delta, int lenbits)
+void de_video_full(int H, int W, int *w, int *h, int **m0, int delta, int lenbits)
 {
 	extern uchar *bin;
 	extern int ptr;
@@ -1368,7 +1368,7 @@ void de_video_full(int H,int W, int *w, int *h, int **m0, int delta, int lenbits
 	ptr = 0;
 	/*中间的32*/
 	///*不需要harr部分*/
-	for (int j = 35; j > 32; j--){
+	for (int j = 35; j > 32; j--) {
 		de_subDC_noharr(j, w, h, m0, delta, lenbits);//不需要做harr的DC
 		de_sub7_noharr(j, w, h, m0, delta, lenbits);//DC后的7个子带
 		for (int i = 1; i < 8; i++)
@@ -1377,7 +1377,7 @@ void de_video_full(int H,int W, int *w, int *h, int **m0, int delta, int lenbits
 	/*L3 == == == == == == == == == == == == == == == == == ==*/
 	de_coef3d_dc(32, w, h, m0, delta, lenbits);
 	de_coed3d_7(32, w, h, m0, delta, lenbits);
-	for (int i = 0; i < 8; i++)
+	for (int i = 1; i < 8; i++)
 		de_coed3d_8(32, i, w, h, m0, delta, lenbits);
 	/*L4 == == == == == == == == == == == == == == == == == ==*/
 	de_coef3dB_dc(32, w, h, m0, delta, lenbits);
@@ -1398,7 +1398,7 @@ void de_video_full(int H,int W, int *w, int *h, int **m0, int delta, int lenbits
 
 	/*前面的32*/
 	///*不需要harr部分*/
-	for (int j = 3; j > 0; j--){
+	for (int j = 3; j > 0; j--) {
 		de_subDC_noharr(j, w, h, m0, delta, lenbits);//不需要做harr的DC
 		de_sub7_noharr(j, w, h, m0, delta, lenbits);//DC后的7个子带
 		for (int i = 1; i < 8; i++)
@@ -1407,7 +1407,7 @@ void de_video_full(int H,int W, int *w, int *h, int **m0, int delta, int lenbits
 	/*L3 == == == == == == == == == == == == == == == == == ==*/
 	de_coef3d_dc(0, w, h, m0, delta, lenbits);
 	de_coed3d_7(0, w, h, m0, delta, lenbits);
-	for (int i = 0; i < 8; i++)
+	for (int i = 1; i < 8; i++)
 		de_coed3d_8(0, i, w, h, m0, delta, lenbits);
 	/*L4 == == == == == == == == == == == == == == == == == ==*/
 	de_coef3dB_dc(0, w, h, m0, delta, lenbits);
@@ -1428,7 +1428,7 @@ void de_video_full(int H,int W, int *w, int *h, int **m0, int delta, int lenbits
 
 	/*最后的32*/
 	///*不需要harr部分*/
-	for (int j = 67; j > 64; j--){
+	for (int j = 67; j > 64; j--) {
 		de_subDC_noharr(j, w, h, m0, delta, lenbits);//不需要做harr的DC
 		de_sub7_noharr(j, w, h, m0, delta, lenbits);//DC后的7个子带
 		for (int i = 1; i < 8; i++)
@@ -1437,7 +1437,7 @@ void de_video_full(int H,int W, int *w, int *h, int **m0, int delta, int lenbits
 	/*L3 == == == == == == == == == == == == == == == == == ==*/
 	de_coef3d_dc(64, w, h, m0, delta, lenbits);
 	de_coed3d_7(64, w, h, m0, delta, lenbits);
-	for (int i = 0; i < 8; i++)
+	for (int i = 1; i < 8; i++)
 		de_coed3d_8(64, i, w, h, m0, delta, lenbits);
 	/*L4 == == == == == == == == == == == == == == == == == ==*/
 	de_coef3dB_dc(64, w, h, m0, delta, lenbits);
@@ -1456,6 +1456,6 @@ void de_video_full(int H,int W, int *w, int *h, int **m0, int delta, int lenbits
 	de_coef3d_dc5B_L2(H, W, 64, 0, 2, w, h, m0, delta, lenbits);
 	de_coef3d_dc5B_L1(H, W, 64, 0, 4, w, h, m0, delta, lenbits);
 
-	
+
 	return;
 }

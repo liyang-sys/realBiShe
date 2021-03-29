@@ -1121,10 +1121,14 @@ void en_coef3dB_L2_4(int H, int W, int a, int b, int c, int *w, int *h, int **m,
 
 	/*2-------------------------------------------------------------------------------*/
 	qctr = quant_sub0(sn[2], max[1], nc[2], lg, idx, delta0, f1.qcf[2]); max[1] = 0;
+	//writeCFSN(f1.qcf[2], lg);
 #if ENCODE
 	sign.len = handleSn(sn[2], idx, lg, qctr, &maxcf0, f1.qcf[2]);
 	sign.dat = snbin;
+
+	//write_en_sub2_sub_data(f1.qcf[2], &sign, lg);
 	en_sub3d_sub2(f1.qcf[2], &sign, lg, maxcf0);
+	//writeBinToFile(bin, ptr);
 #endif
 
 	/*3----------------------------------------------------------------------------*/

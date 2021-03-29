@@ -351,6 +351,18 @@
     <ClCompile Include="writeBinToFile.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="writeDataToFile.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="write_en_sub2_sub_data.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test_en_sub3d_sub2.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="writeCFSN.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="all.h">

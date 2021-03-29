@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "all.h"
+#include "encoding.h"
 
 #define uint unsigned int
 #define uchar unsigned char
@@ -30,6 +31,7 @@ void en_r0 (uint *r, int lenr)
     int code;
     int lb;
 
+	//writeDataToFile(r, lenr);
     lenzbit = sum(r, lenr);
 
     pw = (float)lenr / (float)lenzbit;

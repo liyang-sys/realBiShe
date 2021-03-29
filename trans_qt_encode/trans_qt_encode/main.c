@@ -147,6 +147,10 @@ void memoryAllocation(int H, int W, int m, int n)
 	}
 }
 
+//int main()
+//{
+//	test_en_sub3d_sub2();
+//}
 int main()
 {
 	int W, H, n, m;
@@ -215,7 +219,7 @@ int main()
 	//}
 	//±‡¬Î-------------------------------------------------------------
 	en_video_full(H, W, w, h, m0, delta); //±‡¬Î
-	writeBinToFile(bin, ptr);
+	//writeBinToFile(bin, ptr);
 	end2 = clock();
 	double duration2 = (double)(end2 - st2) / CLOCKS_PER_SEC;
 	printf("\n\n ±º‰ %f seconds\n", duration2);

@@ -22,7 +22,7 @@ DEC decode_stationary_source_Nsym_lenr(uchar *bin, int codebook, int lenr0, int 
 	int nfrac;
 	DES des1;
 
-	dec1.r = (uint *)malloc(lenbinbit * sizeof(uint));
+	dec1.r = (uint *)malloc(lenr0 * sizeof(uint));
 
 	dec1.lenr = 0;
 	x = ptr & 7;

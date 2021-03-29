@@ -24,6 +24,11 @@ int snbin_add(uchar *bin1, uchar *snbin, int lenbin2bit)
 		rem.b[2] = (uchar)(~snbin[i + 1]);
 		rem.b[1] = (uchar)(~snbin[i + 2]);
 		rem.b[0] = (uchar)(~snbin[i + 3]);
+		//rem.b[3] = (uchar)(snbin[i]);
+		//rem.b[2] = (uchar)(snbin[i + 1]);
+		//rem.b[1] = (uchar)(snbin[i + 2]);
+		//rem.b[0] = (uchar)(snbin[i + 3]);
+
 		rem.a = rem.a >> x;
 
 		bin1[p >> 3] |= rem.b[3];
@@ -57,7 +62,6 @@ void en_sub3d_sub2(float* cf0, Uint8_Dat* sn, int lencf0, int maxcf0)
 {
 
 	/* Hint:nc以及thd的0索引保留不使用 */
-
 	extern unsigned char *bin;
 	extern int ptr;
 	int tempPtr = ptr;

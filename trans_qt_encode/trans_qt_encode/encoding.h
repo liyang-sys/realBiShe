@@ -93,4 +93,8 @@ void test_en_zone_sub_new();*/
 void encode_stationary_source_Nsym_sub_in_en_Kside_new(uint *r, int lenr, float pw, int Nsym, int flg);
 void encode_stationary_source_Nsym_in_en_Kside_new(uint *r, int lenr, float p_or_codebook, int Nsym, int flg);
 void writeBinToFile(unsigned char *bin, int ptr);
+void writeDataToFile(uint *r, int lenr);
+void write_en_sub2_sub_data(float* cf0, Uint8_Dat* sn, int lencf0);
+void test_en_sub3d_sub2();
+void writeCFSN(float*cf0, int lg);
 #endif /* __ENCODING_H */
