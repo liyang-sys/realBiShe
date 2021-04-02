@@ -46,7 +46,7 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 		{
 			nr1.dat[i] = nr1.dat[i + 1];
 		}
-		nr1.len = nr1.len - 1;
+		//nr1.len = nr1.len - 1;
 
 		Uint8_Dat z1Copy;//±¸·Ý
 		z1Copy.len = z1.len;

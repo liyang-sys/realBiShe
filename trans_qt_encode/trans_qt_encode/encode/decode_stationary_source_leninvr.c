@@ -19,7 +19,8 @@ DEC decode_stationary_source_leninvr (uchar *bin, int codebook, int leninvr0, in
    int leninvr = 0;
    int flg;
 
-   dec1.r = (uint *) calloc (leninvr0, sizeof(uint));
+   int callocLen = 1 << ((codebook >> 1) + 3);
+   dec1.r = (uint *) calloc ((leninvr0*callocLen), sizeof(uint));
 
    dec1.lenr = 0;
    x = ptr & 7;

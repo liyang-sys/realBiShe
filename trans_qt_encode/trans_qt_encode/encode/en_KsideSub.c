@@ -8,7 +8,7 @@ void en_KsideSub (uchar *c, int len, int wuns)  //len是c长度的8倍
 {
    extern int ptr;
    extern uchar *bin;
-   float f0 = 0.4219, f1 = 0.3750, f2 = 0.3125;
+   float f0 = 0.421875, f1 = 0.3750, f2 = 0.3125;
    int i, t, t0, t1;
    int inv = 0;
    GOL g;

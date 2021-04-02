@@ -130,7 +130,7 @@ void memoryAllocation(int H, int W, int m, int n)
 		printf("创建snbin数组失败！\n");
 		exit(1);
 	}
-	if ((bin = (unsigned char*)calloc(H*W*12, sizeof(unsigned char))) == NULL){
+	if ((bin = (unsigned char*)calloc(H*W*12*10, sizeof(unsigned char))) == NULL){
 		printf("创建bin数组失败！\n");
 		exit(1);
 	}
@@ -149,7 +149,11 @@ void memoryAllocation(int H, int W, int m, int n)
 
 //int main()
 //{
-//	test_en_sub3d_sub2();
+//	//test_en_sub3d_sub2();
+//	//int codebook = 17;
+//	//int callocLen = 1 << ((codebook >> 1) + 3);
+//	//printf("callocLen = %d\n", callocLen);
+//	//int x = 1;
 //}
 int main()
 {
@@ -219,7 +223,7 @@ int main()
 	//}
 	//编码-------------------------------------------------------------
 	en_video_full(H, W, w, h, m0, delta); //编码
-	//writeBinToFile(bin, ptr);
+	writeBinToFile(bin, ptr);
 	end2 = clock();
 	double duration2 = (double)(end2 - st2) / CLOCKS_PER_SEC;
 	printf("\n\n时间 %f seconds\n", duration2);
