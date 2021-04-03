@@ -363,6 +363,12 @@
     <ClCompile Include="writeCFSN.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="write_en_zone_new_data.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test_en_zone_new.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="all.h">

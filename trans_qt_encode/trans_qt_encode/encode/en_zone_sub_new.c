@@ -47,7 +47,7 @@ void en_zone_sub_new(Uint32_Dat* r, float kcr, SEP **sep)
 
 
 	/* p1=1-1/4-1/16+1/64; */
-	p1 = 0.7031;
+	p1 = 0.703125;
 	/* p2=1-1/4+1/16; */
 	p2 = 0.8125;
 	/* lenr=length(r); */

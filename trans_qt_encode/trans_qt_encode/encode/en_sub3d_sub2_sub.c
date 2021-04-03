@@ -42,7 +42,7 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 		z1.len = sepCfk.lensepbit;
 		k_criterion((void *)&z1, &cr1, &crc1, &r1, &lB1, &pr, &nr1, NULL, 1);
 
-		for (int i = 0; i < nr1.len - 1; i++)
+		for (int i = 0; i < nr1.len; i++)
 		{
 			nr1.dat[i] = nr1.dat[i + 1];
 		}

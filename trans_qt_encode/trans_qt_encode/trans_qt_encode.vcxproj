@@ -234,12 +234,14 @@
     <ClCompile Include="scan\modify_Hilbert_sub.c" />
     <ClCompile Include="scan\modify_Hilbert_sub3D.c" />
     <ClCompile Include="test_en_sub3d_sub2.c" />
+    <ClCompile Include="test_en_zone_new.c" />
     <ClCompile Include="trans\readYUV.c" />
     <ClCompile Include="trans\SCWP8-method2_all_3.c" />
     <ClCompile Include="writeBinToFile.c" />
     <ClCompile Include="writeCFSN.c" />
     <ClCompile Include="writeDataToFile.c" />
     <ClCompile Include="write_en_sub2_sub_data.c" />
+    <ClCompile Include="write_en_zone_new_data.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="all.h" />

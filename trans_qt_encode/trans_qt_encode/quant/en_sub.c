@@ -1461,7 +1461,14 @@ void en_video_full(int H,int W, int *w, int *h, int **m0, float delta)
 		en_subDC_noharr(j, w, h, m0, delta);//不需要做harr的DC
 		en_sub7_noharr(j, w, h, m0, delta);//DC后的7个子带
 		for (int i = 1; i < 8; i++)
+		{
+			//if (i == 7)
+			//{
+			//	int xxxxxx = 0;
+			//}
 			en_sub8_noharr(j, i, w, h, m0, delta);//8个子带
+		}
+
 	}
 	/*L3 == == == == == == == == == == == == == == == == == ==*/
 	en_coef3d_dc(0, w, h, m0, delta);

@@ -154,6 +154,7 @@ void memoryAllocation(int H, int W, int m, int n)
 //	//int callocLen = 1 << ((codebook >> 1) + 3);
 //	//printf("callocLen = %d\n", callocLen);
 //	//int x = 1;
+//	test_en_zone_new();
 //}
 int main()
 {

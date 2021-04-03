@@ -12,6 +12,7 @@ void en_zone_new(Uint32_Dat*r, Uint32_Dat*nc)
 		unsigned short int a;
 		uchar b[4];
 	} rem;
+	//write_en_zone_new_data(r, nc);
 	extern int ptr;
 	extern uchar *bin;
 	int binBytePos = ptr & 7;
@@ -279,9 +280,9 @@ void en_zone_new(Uint32_Dat*r, Uint32_Dat*nc)
 			k_criterion(&rwCopy, &crw, NULL,NULL, NULL, NULL, NULL, NULL, 0);
 			SEP* sepTemp;
 
-			FILE* fp = fopen("rwCopy.txt", "wb");
-			fwrite(rwCopy.dat, sizeof(unsigned int), rwCopy.len, fp);
-			fclose(fp);
+			//FILE* fp = fopen("rwCopy.txt", "wb");
+			//fwrite(rwCopy.dat, sizeof(unsigned int), rwCopy.len, fp);
+			//fclose(fp);
 			en_zone_sub_new(&rwCopy, crw, &sepTemp);
 			
 			//K_Criterion()

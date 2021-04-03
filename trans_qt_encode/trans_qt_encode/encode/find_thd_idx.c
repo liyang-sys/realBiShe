@@ -22,5 +22,18 @@ int  find_thd_idx(Uint32_Dat*n,float p,int *th) //n的真实数据得从1开始，序号等于
 		}
 		idx++;
 	}
+	//while (ssm < psm)
+	//{
+	//	for (int i = th[idx-1] + 1; i <= th[idx]; i++)
+	//	{
+	//		ssm += n->dat[i - 1];
+	//	}
+	//	idx++;
+	//}
+
+	//if ((n->len) - (th[idx - 1]) <= 2)
+	//{
+	//	idx--;
+	//}
 	return idx;
 }

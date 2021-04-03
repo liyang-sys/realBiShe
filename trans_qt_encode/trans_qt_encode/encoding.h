@@ -97,4 +97,6 @@ void writeDataToFile(uint *r, int lenr);
 void write_en_sub2_sub_data(float* cf0, Uint8_Dat* sn, int lencf0);
 void test_en_sub3d_sub2();
 void writeCFSN(float*cf0, int lg);
+void write_en_zone_new_data(Uint32_Dat*r, Uint32_Dat*nc);
+void test_en_zone_new();
 #endif /* __ENCODING_H */
