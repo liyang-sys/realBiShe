@@ -30,7 +30,7 @@ void en_zone_sub2(Uint32_Dat*r)//biny得在调用此函数之前编入bin中去
 	
 	//float p[2] = {0.7031,0.8125};
 	//ia = 1时
-	int thd0 = find_thd(r->len, nw.dat, 0.7031);
+	int thd0 = find_thd(r->len, nw.dat, 0.703125);
 	if (thd0 == 2)
 	{
 		if ((nw.dat[2] / (nw.dat[1]*1.0)) < 0.0945)
@@ -107,9 +107,9 @@ void en_zone_sub2(Uint32_Dat*r)//biny得在调用此函数之前编入bin中去
 	Uint32_Dat golR;
 	golR.dat = gol.r;
 	golR.len = gol.lenr;
-	FILE *fp = fopen("golR.txt", "wb");
-	fwrite(golR.dat, sizeof(unsigned int), golR.len, fp);
-	fclose(fp);
+	//FILE *fp = fopen("golR.txt", "wb");
+	//fwrite(golR.dat, sizeof(unsigned int), golR.len, fp);
+	//fclose(fp);
 	en_runs_1sep(&golR, 0.8125, 4, sep0.lensepbit, NULL);
 
 

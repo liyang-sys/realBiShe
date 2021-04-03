@@ -34,7 +34,7 @@ void en_Kside(int *rk, int l_rk, int thd)
 
       pk = (float)(sumr) / l_rk;
 
-      if (pk>0.2421){
+      if (pk> 0.242141716744801){
          ptr++;   //°Ñ0ÒÆµ½bin
          en_KsideSub(rB, l_rk, sumr);
       }

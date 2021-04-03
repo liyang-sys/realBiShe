@@ -21,7 +21,7 @@ void en_r0 (uint *r, int lenr)
     int i ,x, x1;
     int lenzbit;
     float pw;
-    float p0 = 0.4219;
+    float p0 = 0.421875;
     float p1 = 0.375;
     float p2 = 0.3125;
     int lastRun;

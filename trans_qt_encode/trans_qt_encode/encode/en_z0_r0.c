@@ -13,7 +13,7 @@ void en_z0_r0(Uint8_Dat* z, Uint32_Dat* runs,int lastBit,int wuns,float p)//wuns
 	} rem;
 	extern int ptr;
 	extern uchar *bin;
-	double f0 = 0.4219, f1 = 0.3750, f2 = 0.3125;
+	double f0 = 0.421875, f1 = 0.3750, f2 = 0.3125;
 	int binBytePos = ptr & 7;
 	if (wuns >= (z->len) *f0)
 	{

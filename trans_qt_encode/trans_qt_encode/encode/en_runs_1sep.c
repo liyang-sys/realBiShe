@@ -35,7 +35,7 @@ void en_runs_1sep(Uint32_Dat* r, float p, unsigned char cbook, int lenz, SEP* se
 	if (sep == NULL) {
 		sep = &temp;
 	}
-	if (lenz > 600) {
+	if (lenz > 600 && (r->len) >=5) {
 		/* biny=[biny 0]; */
 		ptr++;
 

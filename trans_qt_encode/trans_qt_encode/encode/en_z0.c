@@ -14,7 +14,7 @@ void en_z0(Uint8_Dat* z, int wuns)
 	} rem;
 	extern int ptr;
 	extern uchar *bin;
-	double f0 = 0.4219, f1 = 0.3750, f2 = 0.3125;
+	double f0 = 0.421875, f1 = 0.3750, f2 = 0.3125;
 	//printf("\n en_z0 中ptr = %d\n", ptr);
 	int inv = 0, index = ptr & 7;
 	if (2 * wuns > z->len)
@@ -103,7 +103,7 @@ void en_z0(Uint8_Dat* z, int wuns)
 		ptr++; index++;
 		index &= 7;
 	}
-	else if (wuns > (z->len) * 0.2421)
+	else if (wuns > (z->len) * 0.242141716744801)
 	{
 		rem.a = 3;//编011
 		rem.a = rem.a << (13 - index);
@@ -133,7 +133,7 @@ void en_z0(Uint8_Dat* z, int wuns)
 
 		free(gol.r);//用完记得释放
 	}
-	else if (wuns > (z->len) * 0.1797)
+	else if (wuns > (z->len) * 0.179664643992362)
 	{
 		rem.a = 4;//编100
 		rem.a = rem.a << (13 - index);
@@ -163,7 +163,7 @@ void en_z0(Uint8_Dat* z, int wuns)
 
 		free(gol.r);//用完记得释放
 	}
-	else if (wuns > (z->len) * 0.1294)
+	else if (wuns > (z->len) * 0.129449436703876)
 	{
 		rem.a = 5;//编101
 		rem.a = rem.a << (13 - index);
@@ -193,7 +193,7 @@ void en_z0(Uint8_Dat* z, int wuns)
 
 		free(gol.r);//用完记得释放
 	}
-	else if (wuns > (z->len) * 0.0943)
+	else if (wuns > (z->len) *  0.094276335736093)
 	{
 		rem.a = 6;//编110
 		rem.a = rem.a << (13 - index);
